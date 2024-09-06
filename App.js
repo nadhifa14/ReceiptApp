@@ -9,13 +9,24 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import MainScreen from './src/screens/MainScreen';
 import DetailScreen from './src/screens/RecipeDetailScreen';
+import colors from './src/theme/colors';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
 function App() {
   return (
-    <NavigationContainer>
+    <NavigationContainer theme={{
+      darkMode: false, //kalo mau dibikin dark mode jadiin true
+      colors: {
+        background: colors.background,
+        border: colors.border,
+        card: colors.card,
+        text: colors.text,
+        notification: colors.notification,
+        primary: colors.primary,
+      },
+    }}>
       <Stack.Navigator>
         <Stack.Screen name="Main" 
         component={MainScreen} 

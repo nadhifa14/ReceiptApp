@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "my-project",
-    "slug": "my-project",
+    "name": "recipt-project",
+    "slug": "recipt-project",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,10 +18,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.nadhifa.aqila.reciptproject"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "bc1485cf-b7d6-4696-8c98-9a7d3da63725"
+      }
     }
   }
 }
